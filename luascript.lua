@@ -37,7 +37,7 @@ function conky_main ()
 	put_centre_text(cr, xc, yc - 1.5*FONTSIZE, FONTSIZE, "CPU:")
 	put_centre_text(cr, xc, yc, FONTSIZE, cpu .. "%")
 	temp = conky_parse("${hwmon 1 temp 1}")
-	put_centre_text(cr, xc, yc + 1.5*FONTSIZE, FONTSIZE, temp.. " C")
+	put_centre_text(cr, xc, yc + 1.5*FONTSIZE, FONTSIZE, temp.. "°C")
 
 	-- System Info (top left)
 	xc, yc = Gx - 1.5*RADIUS, Gy - RADIUS*math.sin(t)
